@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Student Manager</div>
+        <div class="menu">
+            <a href="#top">Главная</a>
+            <a href="#students">Студенты</a>
+            <a href="#about">О нас</a>
+            <a href="#add">Добавить</a>
+        </div>
+    </div>
+
+    <div class="container" id="top">
+        <div class="hero">
+            <h1>Управление студентами</h1>
+            <p>Добавляйте студентов и просматривайте список группы</p>
+        </div>
+
+        <div class="card" id="add">
+            <h2>Добавить студента</h2>
+            <form>
+                <div class="field">
+                    <label><span>Имя:</span>
+                        <input type="text" name="first_name" placeholder="Введите имя">
+                    </label>
+                </div>
+                <div class="field">
+                    <label><span>Фамилия:</span>
+                        <input type="text" name="last_name" placeholder="Введите фамилию">
+                    </label>
+                </div>
+                <div class="field">
+                    <label><span>Email:</span>
+                        <input type="email" name="email" placeholder="name@mail.com">
+                    </label>
+                </div>
+                <div class="field">
+                    <label><span>Группа:</span>
+                        <input type="text" name="group" placeholder="IT-24">
+                    </label>
+                </div>
+                <button type="submit">Добавить студента</button>
+            </form>
+        </div>
+
+        <div class="card" id="students">
+            <h2>Список студентов</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Email</th>
+                        <th>Группа</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Арман</td><td>Алиев</td><td>arman@mail.com</td><td>IT-24</td></tr>
+                    <tr><td>2</td><td>Данияр</td><td>Садыков</td><td>daniyar@mail.com</td><td>IT-25</td></tr>
+                    <tr><td>3</td><td>Алина</td><td>Ким</td><td>alina@mail.com</td><td>IT-24</td></tr>
+                    <tr><td>4</td><td>Мадина</td><td>Исмаилова</td><td>madina@mail.com</td><td>IT-25</td></tr>
+                    <tr><td>5</td><td>Тимур</td><td>Рахимов</td><td>timur@mail.com</td><td>IT-24</td></tr>
+                    <tr><td>6</td><td>Сабина</td><td>Юсупова</td><td>sabina@mail.com</td><td>IT-26</td></tr>
+                    <tr><td>7</td><td>Азамат</td><td>Каримов</td><td>azamat@mail.com</td><td>IT-25</td></tr>
+                    <tr><td>8</td><td>Камила</td><td>Назарова</td><td>kamila@mail.com</td><td>IT-26</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card about" id="about">
+            <h2>О проекте</h2>
+            <p>Student Manager — веб-приложение для хранения информации о студентах.</p>
+            <a href="#top">Подробнее</a>
+        </div>
+    </div>
+</body>
+</html>
